@@ -54,8 +54,7 @@ select * from tb_classes where defesa between 200 and 600;
 
 select * from tb_personagens where nome like "%c%";
 
-select tb_personagens.nome, tb_personagens.datanasc, tb_personagens.raça, 
-tb_classes.classe from tb_personagens inner join tb_classes
+select * from tb_personagens inner join tb_classes
 on tb_classes.id = tb_personagens.classes_id order by nome;
 
 select * from tb_personagens where classes_id = 4;
